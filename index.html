@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>🎵 Playlists</h2>
+
+    <h3>Chill Vibes</h3>
+    <ul id="playlist1"></ul>
+
+    <h3>Party Hits</h3>
+    <ul id="playlist2"></ul>
+  </div>
+
+  <!-- Main Player -->
+  <div class="main">
+    <h1>🎧 Music Player</h1>
+
+    <h2 id="title">Select Song</h2>
+    <p id="artist"></p>
+
+    <audio id="audio"></audio>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button onclick="prevSong()">⏮</button>
+      <button onclick="playPause()">▶️ / ⏸</button>
+      <button onclick="nextSong()">⏭</button>
+      <button onclick="shuffleSong()">🔀</button>
+    </div>
+
+    <!-- Progress -->
+    <input type="range" id="progress" value="0">
+
+    <!-- Volume -->
+    <p>🔊 Volume</p>
+    <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
